@@ -1,0 +1,12 @@
+<div *ngIf="comic">
+  <h2>{{comic.titulo}}</h2>
+  <img [src]="comic.imagen" [alt]="comic.titulo">
+  <p><strong>Autor:</strong> {{comic.autor}}</p>
+  <p><strong>Editorial:</strong> {{comic.editorial}}</p>
+  <p><strong>Precio:</strong> {{comic.precio}}€</p>
+  <p><strong>Descripción:</strong> {{comic.descripcion}}</p>
+  <p><strong>Stock:</strong> {{comic.stock}} unidades</p>
+  <button (click)="addToCart()">Añadir al carrito</button>
+</div>
+
+<p *ngIf="!comic">Cómic no encontrado</p>

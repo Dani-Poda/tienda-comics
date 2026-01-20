@@ -1,0 +1,11 @@
+<h2>Catálogo Completo</h2>
+
+<div class="comics-container">
+  <div class="comic-card" *ngFor="let comic of comics">
+    <img [src]="comic.imagen" [alt]="comic.titulo">
+    <h3>{{comic.titulo}}</h3>
+    <p>{{comic.autor}}</p>
+    <p>{{comic.precio}}€</p>
+    <button [routerLink]="['/products', comic.id]">Ver detalle</button>
+  </div>
+</div>
