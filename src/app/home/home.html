@@ -1,11 +1,13 @@
-<h2>Nuestros comics destacados del mes:</h2>
-
-<div class="comics-container">
-  <div *ngFor="let comic of comicDestacado" class="comic-card">
-    <img [src]="comic.imagen" [alt]="comic.titulo">
-    <h3>{{comic.titulo}}</h3>
-    <p>{{comic.autor}}</p>
-    <p>{{comic.precio}}</p>
-    <button [routerLink]="['/products', comic.id]">Ver detalles</button>
+<div class="content-wrapper">
+  <h2>Nuestros comics destacados del mes:</h2>
+  
+  <div class="comics-container">
+    <div *ngFor="let comic of comicDestacado" class="comic-card">
+      <img [src]="comic.imagen" [alt]="comic.titulo">
+      <h3>{{comic.titulo}}</h3>
+      <p>{{comic.autor}}</p>
+      <p>{{comic.precio}}</p>
+      <button [routerLink]="['/products', comic.id]">Ver detalles</button>
+    </div>
   </div>
 </div>
