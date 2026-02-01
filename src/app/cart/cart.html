@@ -3,7 +3,7 @@
   
   <p *ngIf="items.length === 0">El carrito está vacío</p>
   
-  <div *ngIf="items.length > 0">
+  <div *ngIf="items.length > 0" class="cart-content">
     <div class="cart-item" *ngFor="let item of items; let i = index">
       <p>({{item.cantidad}}) {{item.comic.titulo}} x {{item.comic.precio | number:'1.2-2'}}€ = {{item.cantidad * item.comic.precio | number:'1.2-2'}}€</p>
       <button (click)="removeItem(i)">Eliminar artículo</button>

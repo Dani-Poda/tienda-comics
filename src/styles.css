@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Bangers';
+  src: url('/assets/fonts/Bangers-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +12,8 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif, Tahoma, Verdana, sans-serif;
+  letter-spacing: 1.5px;
   color: white;
   background-image: url('/assets/images/body.png');
   background-size: cover;
