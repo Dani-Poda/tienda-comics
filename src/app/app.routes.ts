@@ -3,6 +3,7 @@ import { Home } from './home/home';
 import { Products } from './products/products';
 import { ProductsDetail } from './products-detail/products-detail';
 import { Cart } from './cart/cart';
+import { Checkout } from './checkout/checkout';
 
 
 
@@ -25,5 +26,10 @@ export const routes: Routes = [
   {
     path: 'cart',
     component: Cart
+  },
+
+  {
+    path: 'checkout',
+    component: Checkout
   }
 ];

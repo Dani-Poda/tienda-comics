@@ -58,4 +58,8 @@ export class CartDataService {
       this.cartItems.splice(i, 1);  
     }
   }
+
+  clearCart() {
+    this.cartItems = [];
+  }
 }
