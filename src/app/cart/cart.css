@@ -54,3 +54,22 @@ strong {
   font-size: 24px;
   color: #27ae60;
 }
+
+.btn-checkout {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 20px auto 0 auto;
+}
+
+.btn-checkout:hover {
+  background-color: #229954;
+}

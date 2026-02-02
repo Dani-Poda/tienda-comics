@@ -1,0 +1,127 @@
+h2 {
+  padding: 10px;
+  text-align: center;
+  font-size: 32px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+  padding: 10px;
+  text-align: center;
+  font-size: 26px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cart-content {
+  max-width: 800px;
+  margin: 40px auto 0 auto; 
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgb(250, 246, 215);
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 15px 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.cart-item p {
+  margin: 0;
+  flex: 1;
+  text-align: left;
+}
+
+.total-amount {
+  font-size: 24px;
+  color: #27ae60;
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.payment-wrapper {
+  max-width: 800px;
+  margin: 40px auto 0 auto; 
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgb(250, 246, 215);
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.payment-form label {
+  font-size: 18px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing:  0;
+  gap: 8px;    
+}
+
+.payment-form input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  outline: none;
+  background-color: #f9f9f9;
+}
+
+.payment-form textarea {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing:  0;
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  outline: none;
+  background-color: #f9f9f9;
+}
+
+.payment-form select {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing:  0;
+  padding: 2px 8px;
+  border: 2px solid #e0e0e0;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  outline: none;
+  background-color: #f9f9f9;
+}
+
+.payment-form input:focus,
+.payment-form textarea:focus,
+.payment-form select:focus {
+  border-color: #3498db;
+  background-color: white;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 20px auto 0 auto;
+}
+
+button:hover {
+  background-color: #229954;
+}

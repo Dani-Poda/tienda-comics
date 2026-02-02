@@ -1,1 +1,64 @@
-<p>checkout works!</p>
+<div class="content-wrapper">
+
+  <h2>Formulario de pago</h2>
+
+  <div *ngIf="items.length > 0" class="cart-content">
+    <h3>Resumen de su compra</h3>
+    <div *ngFor="let item of items; let i = index" class="cart-item">
+      <p>({{item.cantidad}}) {{item.comic.titulo}} x {{item.comic.precio | number:'1.2-2'}}€ = {{item.cantidad * item.comic.precio | number:'1.2-2'}}€</p>
+    </div>
+    <p class="total-amount"><strong>Total: {{total | number:'1.2-2'}}€</strong></p>
+  </div>
+
+  <div class="payment-wrapper">
+    <h3>Datos del comprador</h3>
+
+    <form class="payment-form">
+      <label for="nombre">Nombre
+        <input 
+          type="text"
+          id="nombre"
+          name="nombre"
+          [(ngModel)]="formulario.nombre"
+          placeholder="Introduce tu nombre completo"
+          required
+        >
+      </label>
+
+
+      <label for="email">Email
+        <input 
+          type="email"
+          id="email"
+          name="email"
+          [(ngModel)]="formulario.email"
+          placeholder="Introduce tu dirección de correo"
+          required
+        >
+      </label>
+
+      <label for="direccion">Dirección
+        <textarea 
+          id="direccion"
+          name="direccion"
+          [(ngModel)]="formulario.direccion"
+          placeholder="Introduce tu dirección completa. (Localidad, calle, piso, CP...)"
+          rows="3"
+          required
+        >
+        </textarea>
+      </label>
+
+      <label for="metodoPago">Método de pago
+        <select name="metodoPago" id="metodoPago" [(ngModel)]="formulario.metodoPago">
+          <option value="tarjeta">Tarjeta</option>
+          <option value="paypal">Paypal</option>
+        </select>
+      </label>
+    </form>
+
+    <button (click)="finalizarCompra()">Finalizar compra</button>
+
+  </div>
+
+</div>

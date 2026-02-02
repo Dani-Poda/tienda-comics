@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CartDataService } from '../cart-data.service';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 interface paymentForm {
   nombre: string,
@@ -11,7 +12,7 @@ interface paymentForm {
 
 @Component({
   selector: 'app-checkout',
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './checkout.html',
   styleUrl: './checkout.css',
 })
@@ -36,7 +37,11 @@ export class Checkout {
   }
 
   finalizarCompra() {
-    // 1. Generar número de pedido aleatorio (entre 10000 y 99999)
+    if (!this.formulario.nombre || !this.formulario.email || !this.formulario.direccion) {
+      alert('Por favor, completa todos los campos');
+      return; 
+    }
+
     const numeroPedido = Math.floor(Math.random() * 90000) + 10000;
     
     alert(`¡Pedido confirmado! Tu número de pedido es: ${numeroPedido}`);
