@@ -1,11 +1,17 @@
-<div class="header-banner"></div>
-
-<nav>
-  <a routerLink="/">Home</a>
-  <a routerLink="/products">Catálogo</a>
-  <a routerLink="/cart">Carrito</a>
-</nav>
-<router-outlet></router-outlet>
-<footer>
-  <p>&copy; 2026 Copyright: <a href="https://github.com/Dani-Poda">Daniel Podadera</a></p>
-</footer>
+<div class="page-wrapper">
+  <div class="app-container">
+    <div class="header-banner"></div>
+    
+    <nav>
+      <a routerLink="/">Home</a>
+      <a routerLink="/products">Catálogo</a>
+      <a routerLink="/cart">Carrito</a>
+    </nav>
+    
+    <router-outlet></router-outlet>
+  </div>
+  
+  <footer>
+    <p>&copy; 2026 Copyright: <a href="https://github.com/Dani-Poda">Daniel Podadera</a></p>
+  </footer>
+</div>
